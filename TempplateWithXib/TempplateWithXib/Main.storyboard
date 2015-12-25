@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J0p-04-IqO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="PE6-Wa-xa8">
+            <objects>
+                <viewController id="J3V-fh-qk3" customClass="MainViewController" customModule="TempplateWithXib" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dU2-Dh-IfK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gdq-aD-xS6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UZM-Ns-ITs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufj-ap-W5l">
+                                <rect key="frame" x="136" y="169" width="48" height="30"/>
+                                <state key="normal" title="Load A"/>
+                                <connections>
+                                    <action selector="loadA:" destination="J3V-fh-qk3" eventType="touchUpInside" id="raJ-8W-BAF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-6u-aSP">
+                                <rect key="frame" x="136" y="238" width="48" height="30"/>
+                                <state key="normal" title="Load B"/>
+                                <connections>
+                                    <action selector="loadB:" destination="J3V-fh-qk3" eventType="touchUpInside" id="acg-Hs-fEH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="XNN-bj-ScZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rc1-pG-Hys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="294"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R0r-Aw-zvT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J0p-04-IqO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p8F-Tz-R02">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J3V-fh-qk3" kind="relationship" relationship="rootViewController" id="JvX-ke-iJj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJE-wJ-egW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="294"/>
+        </scene>
+    </scenes>
+</document>

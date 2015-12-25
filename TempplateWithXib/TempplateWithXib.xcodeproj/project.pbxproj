@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		B22ABC021C2D8EC800441968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC011C2D8EC800441968 /* AppDelegate.swift */; };
-		B22ABC041C2D8EC800441968 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC031C2D8EC800441968 /* ViewController.swift */; };
-		B22ABC071C2D8EC800441968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22ABC051C2D8EC800441968 /* Main.storyboard */; };
 		B22ABC0A1C2D8EC800441968 /* TempplateWithXib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC081C2D8EC800441968 /* TempplateWithXib.xcdatamodeld */; };
 		B22ABC0C1C2D8EC800441968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22ABC0B1C2D8EC800441968 /* Assets.xcassets */; };
 		B22ABC0F1C2D8EC800441968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22ABC0D1C2D8EC800441968 /* LaunchScreen.storyboard */; };
 		B22ABC1A1C2D8EC800441968 /* TempplateWithXibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC191C2D8EC800441968 /* TempplateWithXibTests.swift */; };
 		B22ABC251C2D8EC800441968 /* TempplateWithXibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC241C2D8EC800441968 /* TempplateWithXibUITests.swift */; };
+		B22ABC341C2D8F7D00441968 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC331C2D8F7D00441968 /* BaseViewController.swift */; };
+		B22ABC3B1C2D8FE600441968 /* ViewAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC391C2D8FE600441968 /* ViewAViewController.swift */; };
+		B22ABC3C1C2D8FE600441968 /* ViewAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22ABC3A1C2D8FE600441968 /* ViewAViewController.xib */; };
+		B22ABC3F1C2D902000441968 /* ViewBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC3D1C2D902000441968 /* ViewBViewController.swift */; };
+		B22ABC401C2D902000441968 /* ViewBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22ABC3E1C2D902000441968 /* ViewBViewController.xib */; };
+		B22ABC431C2D903100441968 /* ViewCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC411C2D903100441968 /* ViewCViewController.swift */; };
+		B22ABC441C2D903100441968 /* ViewCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22ABC421C2D903100441968 /* ViewCViewController.xib */; };
+		B22ABC461C2D9CAA00441968 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC451C2D9CAA00441968 /* Engine.swift */; };
+		B22ABC481C2DAD9A00441968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22ABC471C2DAD9A00441968 /* Main.storyboard */; };
+		B22ABC4A1C2DADB100441968 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ABC491C2DADB100441968 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +45,6 @@
 /* Begin PBXFileReference section */
 		B22ABBFE1C2D8EC800441968 /* TempplateWithXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempplateWithXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22ABC011C2D8EC800441968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B22ABC031C2D8EC800441968 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B22ABC061C2D8EC800441968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B22ABC091C2D8EC800441968 /* TempplateWithXib.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TempplateWithXib.xcdatamodel; sourceTree = "<group>"; };
 		B22ABC0B1C2D8EC800441968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B22ABC0E1C2D8EC800441968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,16 @@
 		B22ABC201C2D8EC800441968 /* TempplateWithXibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempplateWithXibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22ABC241C2D8EC800441968 /* TempplateWithXibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempplateWithXibUITests.swift; sourceTree = "<group>"; };
 		B22ABC261C2D8EC800441968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B22ABC331C2D8F7D00441968 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B22ABC391C2D8FE600441968 /* ViewAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAViewController.swift; sourceTree = "<group>"; };
+		B22ABC3A1C2D8FE600441968 /* ViewAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewAViewController.xib; sourceTree = "<group>"; };
+		B22ABC3D1C2D902000441968 /* ViewBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBViewController.swift; sourceTree = "<group>"; };
+		B22ABC3E1C2D902000441968 /* ViewBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewBViewController.xib; sourceTree = "<group>"; };
+		B22ABC411C2D903100441968 /* ViewCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCViewController.swift; sourceTree = "<group>"; };
+		B22ABC421C2D903100441968 /* ViewCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewCViewController.xib; sourceTree = "<group>"; };
+		B22ABC451C2D9CAA00441968 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		B22ABC471C2DAD9A00441968 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B22ABC491C2DADB100441968 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +115,8 @@
 		B22ABC001C2D8EC800441968 /* TempplateWithXib */ = {
 			isa = PBXGroup;
 			children = (
+				B22ABC321C2D8F5000441968 /* ViewController */,
 				B22ABC011C2D8EC800441968 /* AppDelegate.swift */,
-				B22ABC031C2D8EC800441968 /* ViewController.swift */,
-				B22ABC051C2D8EC800441968 /* Main.storyboard */,
 				B22ABC0B1C2D8EC800441968 /* Assets.xcassets */,
 				B22ABC0D1C2D8EC800441968 /* LaunchScreen.storyboard */,
 				B22ABC101C2D8EC800441968 /* Info.plist */,
@@ -126,6 +141,23 @@
 				B22ABC261C2D8EC800441968 /* Info.plist */,
 			);
 			path = TempplateWithXibUITests;
+			sourceTree = "<group>";
+		};
+		B22ABC321C2D8F5000441968 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B22ABC451C2D9CAA00441968 /* Engine.swift */,
+				B22ABC491C2DADB100441968 /* MainViewController.swift */,
+				B22ABC471C2DAD9A00441968 /* Main.storyboard */,
+				B22ABC391C2D8FE600441968 /* ViewAViewController.swift */,
+				B22ABC3A1C2D8FE600441968 /* ViewAViewController.xib */,
+				B22ABC3D1C2D902000441968 /* ViewBViewController.swift */,
+				B22ABC3E1C2D902000441968 /* ViewBViewController.xib */,
+				B22ABC411C2D903100441968 /* ViewCViewController.swift */,
+				B22ABC421C2D903100441968 /* ViewCViewController.xib */,
+				B22ABC331C2D8F7D00441968 /* BaseViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +264,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22ABC401C2D902000441968 /* ViewBViewController.xib in Resources */,
 				B22ABC0F1C2D8EC800441968 /* LaunchScreen.storyboard in Resources */,
 				B22ABC0C1C2D8EC800441968 /* Assets.xcassets in Resources */,
-				B22ABC071C2D8EC800441968 /* Main.storyboard in Resources */,
+				B22ABC481C2DAD9A00441968 /* Main.storyboard in Resources */,
+				B22ABC3C1C2D8FE600441968 /* ViewAViewController.xib in Resources */,
+				B22ABC441C2D903100441968 /* ViewCViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B22ABC041C2D8EC800441968 /* ViewController.swift in Sources */,
+				B22ABC3F1C2D902000441968 /* ViewBViewController.swift in Sources */,
 				B22ABC0A1C2D8EC800441968 /* TempplateWithXib.xcdatamodeld in Sources */,
+				B22ABC431C2D903100441968 /* ViewCViewController.swift in Sources */,
+				B22ABC3B1C2D8FE600441968 /* ViewAViewController.swift in Sources */,
 				B22ABC021C2D8EC800441968 /* AppDelegate.swift in Sources */,
+				B22ABC461C2D9CAA00441968 /* Engine.swift in Sources */,
+				B22ABC341C2D8F7D00441968 /* BaseViewController.swift in Sources */,
+				B22ABC4A1C2DADB100441968 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B22ABC051C2D8EC800441968 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B22ABC061C2D8EC800441968 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B22ABC0D1C2D8EC800441968 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -391,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

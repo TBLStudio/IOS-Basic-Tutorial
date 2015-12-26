@@ -10,8 +10,12 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupList()
 
         // Do any additional setup after loading the view.
     }
@@ -32,6 +36,47 @@ class MainViewController: UIViewController {
         let viewBViewController = UIViewController(nibName: "ViewBViewController", bundle: nil)
         self.navigationController?.pushViewController(viewBViewController, animated: true)
     }
+    
+    func setupList() {
+        
+        for var i=0; i < 10; i++ {
+            
+            //create image view
+            let itemView  = UIView()
+            itemView.tag = i
+            itemView.backgroundColor = UIColor.yellowColor()
+            itemView.userInteractionEnabled = true
+            itemView.layer.cornerRadius = 20.0
+            itemView.layer.masksToBounds = true
+            scrollView.addSubview(itemView)
+            
+            //attach tap detector
+            //imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("didTapImageView:")))
+        }
+        
+        scrollView.backgroundColor = UIColor.greenColor()
+        positionListItems()
+    }
+    
+    //position all images inside the list
+    func positionListItems() {
+        let itemHeight: CGFloat = scrollView.frame.height
+        let itemWidth: CGFloat = self.view.frame.width * 0.99
+        
+        let horizontalPadding: CGFloat = 10.0
+        
+        for var i=0; i < 10; i++ {
+            let itemView = scrollView.viewWithTag(i)! as UIView
+            itemView.frame = CGRect(
+                x: CGFloat(i) * itemWidth + CGFloat(i+1) * horizontalPadding, y: 0.0,
+                width: itemWidth, height: itemHeight)
+        }
+        
+        scrollView.contentSize = CGSize(
+            width: CGFloat(10) * (itemWidth + horizontalPadding) + horizontalPadding,
+            height:  0)
+    }
+
     
 
     /*

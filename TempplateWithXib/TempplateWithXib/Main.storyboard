@@ -31,10 +31,17 @@
                                     <action selector="loadB:" destination="J3V-fh-qk3" eventType="touchUpInside" id="acg-Hs-fEH"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj4-lZ-CUt">
+                                <rect key="frame" x="0.0" y="395" width="320" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="XNN-bj-ScZ"/>
+                    <connections>
+                        <outlet property="scrollView" destination="mj4-lZ-CUt" id="WRd-pg-5Zy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rc1-pG-Hys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

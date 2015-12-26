@@ -48,8 +48,17 @@ class MainViewController: UIViewController {
             itemView.userInteractionEnabled = true
             itemView.layer.cornerRadius = 20.0
             itemView.layer.masksToBounds = true
-            scrollView.addSubview(itemView)
             
+            
+            let label = UILabel(frame: CGRectMake(0, 0, 100, 21))
+            
+            label.textAlignment = NSTextAlignment.Left
+            label.text = "Page: \(i)"
+            label.textColor = UIColor.blackColor()
+            label.backgroundColor = UIColor.redColor()
+            itemView.addSubview(label)
+            
+            scrollView.addSubview(itemView)
             //attach tap detector
             //imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("didTapImageView:")))
         }
@@ -61,23 +70,40 @@ class MainViewController: UIViewController {
     //position all images inside the list
     func positionListItems() {
         let itemHeight: CGFloat = scrollView.frame.height
-        let itemWidth: CGFloat = self.view.frame.width * 0.99
+        let itemWidth: CGFloat = self.view.frame.width
         
-        let horizontalPadding: CGFloat = 10.0
+        let horizontalPadding: CGFloat = 0
         
         for var i=0; i < 10; i++ {
             let itemView = scrollView.viewWithTag(i)! as UIView
             itemView.frame = CGRect(
-                x: CGFloat(i) * itemWidth + CGFloat(i+1) * horizontalPadding, y: 0.0,
+                x: CGFloat(i-1) * itemWidth + CGFloat(i) * horizontalPadding, y: 0.0,
                 width: itemWidth, height: itemHeight)
+            print("item view: \(CGFloat(i) * itemWidth + CGFloat(i+1) * horizontalPadding)")
         }
         
         scrollView.contentSize = CGSize(
             width: CGFloat(10) * (itemWidth + horizontalPadding) + horizontalPadding,
             height:  0)
     }
+    func scrollToPage(page: Int, animated: Bool) {
+        var frame: CGRect = self.scrollView.frame
+        frame.origin.x = frame.size.width * CGFloat(page);
+        frame.origin.y = 0;
+        self.scrollView.scrollRectToVisible(frame, animated: animated)
+    }
 
+    @IBAction func previewAction(sender: AnyObject) {
+        print("Preview")
+    }
     
+    @IBAction func nextAction(sender: AnyObject) {
+        print("Next")
+        //scrollToPage(2, animated: true)
+        UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+                self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width*1, 0);
+            }, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

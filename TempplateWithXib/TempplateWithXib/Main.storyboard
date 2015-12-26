@@ -35,6 +35,20 @@
                                 <rect key="frame" x="0.0" y="395" width="320" height="69"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWN-pB-aL8">
+                                <rect key="frame" x="26" y="472" width="54" height="30"/>
+                                <state key="normal" title="preview"/>
+                                <connections>
+                                    <action selector="previewAction:" destination="J3V-fh-qk3" eventType="touchUpInside" id="yEe-gm-Ofv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qI3-wE-C4T">
+                                <rect key="frame" x="255" y="472" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextAction:" destination="J3V-fh-qk3" eventType="touchUpInside" id="UTt-K6-vKJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

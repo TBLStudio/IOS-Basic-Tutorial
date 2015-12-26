@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
     
     @IBAction func loadA(sender: AnyObject) {
         print("Load A")
-        let viewAViewController = UIViewController(nibName: "ViewAViewController", bundle: nil)
+        let viewAViewController = ViewAViewController(nibName: "ViewAViewController", bundle: NSBundle.mainBundle())
         self.navigationController?.pushViewController(viewAViewController, animated: true)
     }
     

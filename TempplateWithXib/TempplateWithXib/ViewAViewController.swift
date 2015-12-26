@@ -10,16 +10,18 @@ import UIKit
 
 class ViewAViewController: BaseViewController {
     
-    override convenience init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        
-        let nib = nibNameOrNil ?? "ViewAViewController"
-        self.init(nibName: nib, bundle: nibBundleOrNil)
-        
-       // super.init(nibName: nib, bundle: nibBundleOrNil)
+    override func loadView() {
+        super.loadView()
+        print("Load view")
+    }
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        print("Init with nibname")
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.navigationController?.navigationBarHidden = true
     }
 
     override func viewDidLoad() {

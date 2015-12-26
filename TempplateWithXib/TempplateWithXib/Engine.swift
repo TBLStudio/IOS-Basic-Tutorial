@@ -13,6 +13,8 @@ class Engine: NSObject {
     
     var rootNavigationController: UINavigationController!
     
+    let viewControllerA = UIViewController(nibName: "ViewAViewController", bundle: nil)
+    
     class var sharedInstance: Engine{
         struct Singleton {
             static let instance = Engine()
